@@ -1,0 +1,1 @@
+const salut = "salut"
