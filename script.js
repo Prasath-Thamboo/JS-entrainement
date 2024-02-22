@@ -1,13 +1,8 @@
-const a = 3; 
-const note = [
-    13, 12, 10, 17
-]
-const person = {
-    firstname: "john",
-    lastname : "pras", 
-    age : 24, 
-    mail: "bingo@hotmail.fr" 
+function canDrive(age, pays){
+if (age < 18 && pays === "FR" || age < 16 && pays === "US"){
+    return false
+}{
+    return true
+}    
 }
-
-
-console.log(a)
+console.log(canDrive(15, "US"))
