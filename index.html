@@ -7,18 +7,16 @@
 </head>
 <body>
     <script>
-        const age = prompt('quel est votre age')
-        let pays = prompt('D\'où venez vous ?')
-        if ((pays = !"US")&&(pays = !"FR")){
-            console.log("Vous avez mal écrit le pays")
-        } else{
-            if ((age >= 18 && pays === "FR") || (age >= 16 && pays === "US")){
-            console.log("vous pouvez conduire")
-            }else {
-            console.log("vous ne pouvez pas cnduire")
+        let chiffre = prompt("entrez votre chiffre ici")
+        if(chiffre>=10){      
+            console.log("erreur")
+           } else {
+            for (i = chiffre; i >= 0; i--){
+                console.log(i)
             }
-        }
-        
+           }
+       
+
 
     </script>
     
