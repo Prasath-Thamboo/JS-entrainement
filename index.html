@@ -7,13 +7,16 @@
 </head>
 <body>
     <script>
-        const guess = 8 
-        let chiffre = prompt("Votre chiffre") * 1
-        while (chiffre !== guess){
-            console.log('pas bon, retentez')
-            chiffre = prompt("Votre chiffre") * 1
-        } 
-        console.log('tout bon')
+       function canDrive(age, pays){
+        if ((age < 18 && pays === "FR") || (age < 16 && pays === "US")){
+            return false
+        } return true
+       } 
+       console.log(canDrive(14,"US"))
+
+       function greeting (){
+        console.log("bonjour")
+       }
 
 
     </script>
