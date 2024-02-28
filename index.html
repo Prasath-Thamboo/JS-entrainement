@@ -7,18 +7,14 @@
 </head>
 <body>
     <script>
-       function canDrive(age, pays){
-        if ((age < 18 && pays === "FR") || (age < 16 && pays === "US")){
-            return false
-        } return true
-       } 
-       console.log(canDrive(14,"US"))
-
-       function greeting (){
-        console.log("bonjour")
-       }
-
-
+        const objet = {
+            firstname:'Joe',
+            lastname: "Friendé", 
+            fullname : function(){
+                console.log(this)
+            }
+        }
+        objet.fullname()
     </script>
     
 </body>
