@@ -7,14 +7,10 @@
 </head>
 <body>
     <script>
-        const objet = {
-            firstname:'Joe',
-            lastname: "Friendé", 
-            fullname : function(){
-                console.log(this)
-            }
+        function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
         }
-        objet.fullname()
+        console.log(getRandomInt(3));
     </script>
     
 </body>
