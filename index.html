@@ -7,10 +7,28 @@
 </head>
 <body>
     <script>
-        function getRandomInt(max) {
+        console.log(nombreAl(10))
+        const nb = prompt("quelle votre chiffre")
+        function nombreAl(max) {
         return Math.floor(Math.random() * max);
         }
-        console.log(getRandomInt(3));
+
+        function isRight(a, b){
+            for (let i = 0 ; i <= 2; i++){
+                  if (a === b){
+                console.log("gagné")
+                }
+                else if (i = 3){
+                    console.log("perdu")
+                }
+                i++
+            } 
+            
+        }
+        console.log(i)
+        console.log(isRight(nombreAl(10),nb))
+
+
     </script>
     
 </body>
