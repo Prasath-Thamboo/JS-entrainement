@@ -7,27 +7,24 @@
 </head>
 <body>
     <script>
-        console.log(nombreAl(10))
-        const nb = prompt("quelle votre chiffre")
-        function nombreAl(max) {
-        return Math.floor(Math.random() * max);
+        function isPremier (a){
+            for (let i = 2; i < a; i++)
+                if(a % i === 0) return false;
+                return a > 1
         }
 
-        function isRight(a, b){
-            for (let i = 0 ; i <= 2; i++){
-                  if (a === b){
-                console.log("gagné")
-                }
-                else if (i = 3){
-                    console.log("perdu")
-                }
-                i++
-            } 
-            
+        function parcours(n){
+            for (let i = n-1; i >= 0; i--) {
+                console.log(i)
+            }
         }
-        console.log(i)
-        console.log(isRight(nombreAl(10),nb))
-
+        
+        //console.log(isPremier(17))
+        console.log(parcours(7))
+        console.log(parcours(2))
+        console.log(parcours(4))
+        console.log(parcours(1))
+        console.log(parcours(3))
 
     </script>
     
