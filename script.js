@@ -5,4 +5,4 @@ if (age < 18 && pays === "FR" || age < 16 && pays === "US"){
     return true
 }    
 }
-console.log(canDrive(15, "US"))
+console.log(canDrive(18, "FR"))
