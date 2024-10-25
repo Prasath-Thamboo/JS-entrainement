@@ -1,4 +1,4 @@
-const salut = "c/'est moi"
+let a = null; 
 
+console.log(a)
 
-console.log(salut)
