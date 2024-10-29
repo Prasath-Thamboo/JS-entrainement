@@ -1,4 +1,3 @@
-let a = null; 
+const notes = [2, 56, 76, 6]
 
-console.log(a)
-
+console.log(notes[3])
