@@ -1,3 +1,8 @@
-const notes = [2, 56, 76, 6]
+const eleves = {
+    name: "Melvyn",
+    age : 42, 
+    size : 190, 
+    key: "clé"
+}
 
-console.log(notes[3])
+console.log(eleves.key)
