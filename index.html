@@ -7,7 +7,36 @@
 </head>
 <body>
 
-  <script src="script.js"></script>
+  <input type="text" value="12" id="zing1">
+  <input type="text" value="24" id="zing2">
+  <button id="add">Boom</button>
+  <h1>Salut Javascript</h1>
+
+
+  <script>
+    const h1 = document.querySelector("h1")
+    const input1 = document.querySelector("#zing1")
+    const input2 = document.querySelector("#zing2")
+    const add = document.querySelector("#add")
+
+    function click() {
+      console.log ("Click")
+    }
+
+    const element1 = Number(input1.value)
+    const element2 = Number(input2.value)
+
+    h1.textContent = (element1 + element2)
+
+
+  </script>
+
+  <style>
+    html{
+      height: 100%;
+
+    }
+  </style>
   
 </body>
 </html>
