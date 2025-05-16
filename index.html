@@ -7,36 +7,42 @@
 </head>
 <body>
 
-  <input type="text" value="12" id="zing1">
-  <input type="text" value="24" id="zing2">
-  <button id="add">Boom</button>
-  <h1>Salut Javascript</h1>
+  <style>
+    body{
+      background-color: aqua;
+    }
+  </style>
+  <h1>Salut c'est moi le boss</h1>
+  <p id="salut">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maiores accusantium consequatur soluta aut excepturi a, qui aliquam similique quia esse molestias recusandae praesentium laborum quod eveniet repellendus ad ipsam.</p>
+  <button onclick="clickme()">Clique ici</button>
+  <button onclick="clicktogreet()">Salut</button>
+  <button onclick="bodyy()">Salut</button>
+  <h1>Hey c'est lui le boss</h1>
+
+
+  
 
 
   <script>
-    const h1 = document.querySelector("h1")
-    const input1 = document.querySelector("#zing1")
-    const input2 = document.querySelector("#zing2")
-    const add = document.querySelector("#add")
-
-    function click() {
-      console.log ("Click")
+    function clickme() {
+      document.getElementById("salut").innerHTML="Salut c'est pas moi le boss en fait"
+      let h1Elements = document.getElementsByTagName("h1")
+      console.log(h1Elements)
+      for (let i = 0; i < h1Elements.length; i++){
+          h1Elements[i].innerHTML="Tu t'es trompé, you are wrong"
+      }
     }
 
-    const element1 = Number(input1.value)
-    const element2 = Number(input2.value)
+    function bodyy (){
+      document.body.style.background="red"
+      document.body.style.padding="50px"
 
-    h1.textContent = (element1 + element2)
+    }
 
-
+    function clicktogreet() {
+      alert("Hello buddy")
+    }
   </script>
-
-  <style>
-    html{
-      height: 100%;
-
-    }
-  </style>
   
 </body>
 </html>
